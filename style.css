@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15+Charted&display=swap');
+a:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    background: linear-gradient(0deg, #EADBC8, #DAC0A3, #102C57, purple);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    height: 40em;
+}
+
+h1 {
+    font-family: "Lugrasimo", cursive;
+    color: #fff;
+    font-size: 6vmin;
+    background: -webkit-linear-gradient(270deg, orange, yellow, blue, aqua, purple, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: "Lugrasimo", cursive;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 5vmin;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 2rem; */
+}
+
+.game {
+    padding: 1rem;
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.box {
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    width: 17vmin;
+    height: 17vmin;
+    font-size: 8vmin;
+    background-color: #FFD0D0;
+}
+
+.dola {
+    font-weight: 600;
+    background: -webkit-linear-gradient(#f00, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box:active {
+    background-color: crimson;
+}
+
+.col {
+    background: linear-gradient(0deg, red, orange);
+}
+
+.btn {
+    font-size: 3vmin;
+    border-radius: 1.2rem;
+    border: none;
+    padding: .7rem 1.6rem;
+    background-color: darkred;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 1.2rem rgb(255, 255, 255, );
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 5.9vmin;
+    margin: 0 1px;
+    font-family: "Jersey 15 Charted", sans-serif;
+}
+
+.msg-container {
+    /* height: 40vmin; */
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width:400px) {
+    body {
+        /* background: linear-gradient(0deg, #EADBC8, #DAC0A3, #102C57, purple); */
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        position: absolute;
+        top: 5rem;
+        left: 2rem;
+        height: 40em;
+    }
+    h1 {
+        font-family: "Lugrasimo", cursive;
+        color: #fff;
+        font-size: 10vmin;
+        background: -webkit-linear-gradient(270deg, orange, yellow, blue, aqua, purple, #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .main-container {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:350px) {
+    body {
+        background: linear-gradient(0deg, #EADBC8, #DAC0A3, #102C57, purple);
+        background-repeat: no-repeat;
+    }
+}
